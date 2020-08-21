@@ -1,0 +1,47 @@
+#clockContainer{
+    position: relative; /*Taaki hour, minute and second hand clockContainer ke relative khud ko set kr le*/
+    margin: auto; /*to center the position of clock*/ 
+   /* border: 2px solid red; */
+    /*background-color: red;*/
+    height: 40vw;
+    width: 40vw;
+    /* height: 440px; ----> So that we can zoom in and out 
+    width: 440px; */
+    background:url(clock.png) no-repeat; /*Kyunki ek baar hee clock chahiye */
+    background-size: 100%; /*clock ko beech mein laane ke liye*/
+
+}
+
+#hour, #minute, #second{
+   position: absolute;
+   background: black;
+   border-radius: 10px;
+}
+
+#hour{
+    width: 2%;
+    height: 35%;
+    top: 17%;
+    left: 48.7%;
+    opacity: 0.8;
+    transform-origin: bottom; /*to rotate hour hand from bottom*/
+    /*display: none; */ /* to hide the visibility*/
+}
+
+#minute{
+    width: 2%;
+    height: 40%;
+    top: 12%;
+    left: 48.75%;
+    opacity: 0.8;
+    transform-origin: bottom;
+}
+
+#second{
+    width: 1%;
+    height: 36%;
+    top: 15%;
+    left: 49.19%;
+    opacity: 0.8;
+    transform-origin: bottom;
+}
